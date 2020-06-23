@@ -1,5 +1,5 @@
 <h1 align="center">
-Launchbase Challenges - RocketSeat Bootcamp<br />
+Launchbase Classes - RocketSeat Bootcamp<br />
 </h1>
 
 <br />
@@ -8,9 +8,9 @@ Launchbase Challenges - RocketSeat Bootcamp<br />
 
 <br />
 <h3 align="center">
- Launchbase Challenges - RocketSeat Bootcamp 
+ Launchbase Classes - RocketSeat Bootcamp 
 </h3>
- <p align="center"> Challenges developed during Rocketseat's Launchbase bootcamp </P>
+ <p align="center"> Projects developed during Rocketseat's Launchbase bootcamp </P>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/caioledesma/" >
@@ -23,9 +23,9 @@ Launchbase Challenges - RocketSeat Bootcamp<br />
 
 <h3 align="center">  
   <a href="#information_source-sobre">About</a> |
-  <a href="#question-challenges">Challenges</a> | 
+  <a href="#question-classes">Classes</a> | 
   <a href="#rocket-tecnologias-utilizadas">Technologies</a> | 
-  <a href="#wave-autor">Autor</a>  
+  <a href="#wave-autor">Author</a>  
 </h3>
 
 <br />
@@ -35,11 +35,11 @@ Launchbase Challenges - RocketSeat Bootcamp<br />
 LaunchBase is an online bootcamp made by RocketSeat School, the training consist in a practical way of learning with a mentoring of a Sênior programming teacher, with a weekly follow-up. The course is based on concepts of programming theories mixed with practical challenges.
 
 
-## :question: Challenges
+## :question: Classes
 
-<p>Challenge 1:</a> first steps with JavaScript, multiple programs and paradigms developed with JavaScript. </p>
+<p>Beginning with Frontend</a> first steps with JavaScript, multiple screens and programs developed with JavaScript. </p>
 
-<p>Challenge 2:</a> Rocketseat website using HTML, CSS and JavaScript to create a smart pop-up. </p>
+<p>Beginning with Backend:</a>  </p>
 <br />
 
 ## :rocket: Technologies
@@ -47,6 +47,7 @@ LaunchBase is an online bootcamp made by RocketSeat School, the training consist
 - Javascript 
 - CSS
 - HTML
+- Node.Js
 - Nunjucks
 - SQLite3
 
@@ -54,6 +55,6 @@ LaunchBase is an online bootcamp made by RocketSeat School, the training consist
 ---
 
 
-### :wave: Autor
+### :wave: Author
 In the process to be a great Product Engineer... join me! 
 
