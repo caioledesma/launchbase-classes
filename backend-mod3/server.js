@@ -11,7 +11,12 @@ server.use(express.static("public"))
 
 
 //CONFIGURANDO TEMPLATE ENGINE, que é setar o motor de view, no começo foi HTML depois muda pra NJK
-server.set("view engine", "html")
+//server.set("view engine", "html")
+
+//CONFIGURANDO O SERVER
+//configurando o sever para ler arquivos .njk 
+server.set("view engine", "njk")
+
 
 //CONFIGURANDO NUNJUCKS, primeiro ele pede o caminho que ele tem que buscar os arquivos, 2o parametro ele pede opções que pelo Mayk é simples pq é a express, sem mta explicação
 nunjucks.configure("views", {
