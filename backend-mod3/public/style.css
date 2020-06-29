@@ -101,6 +101,7 @@ header {
     background-color: var(--color-rocket);
     border-radius: 10px;
     display: grid;
+    cursor: pointer;
 
 }
 
@@ -176,4 +177,19 @@ iframe{
     top: 5%;
     position: absolute;
 
+}
+
+/* ==== FEATURED ==== */
+.featured-wrapper.card_image-container {
+    position: relative;
+}
+
+.featured{
+    background: #f15395;
+    color: white;
+    padding: 3px 8px;
+    position: absolute;
+    left: -1px;
+    border-radius: 16px;
+    top: -10px;
 }

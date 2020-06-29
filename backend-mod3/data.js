@@ -3,7 +3,8 @@ module.exports = [
         id: "HN1UjzRSdBk",
         title: "Desvendando o CSS Grid na prática | Mayk Brito",
         duration: "36 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "vqrjFnq3-uo",
@@ -15,7 +16,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulário Animado com JS puro e CSS Animation | Mayk Brito",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "c7P03kkrEG8",
@@ -33,6 +35,7 @@ module.exports = [
         id: "OXxul6AvXNs",
         title: "TypeScript com ReactJS, Redux e Redux Saga | Diego Fernandes",
         duration: "50 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     }
 ]

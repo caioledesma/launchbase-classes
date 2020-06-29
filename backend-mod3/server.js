@@ -21,7 +21,8 @@ server.set("view engine", "njk")
 //CONFIGURANDO NUNJUCKS, primeiro ele pede o caminho que ele tem que buscar os arquivos, 2o parametro ele pede opções que pelo Mayk é simples pq é a express, sem mta explicação
 nunjucks.configure("views", {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 //CRIANDO ROTAS 
