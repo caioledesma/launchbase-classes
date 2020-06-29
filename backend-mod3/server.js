@@ -2,7 +2,7 @@ const express = require("express")
 const nunjucks = require("nunjucks")
 
 const server = express() // a variável EXPRESS se transformou numa função express()
-
+const videos = require("./data")
 
 
 //CONFIGURANDO O ESTILO
@@ -20,7 +20,8 @@ server.set("view engine", "njk")
 
 //CONFIGURANDO NUNJUCKS, primeiro ele pede o caminho que ele tem que buscar os arquivos, 2o parametro ele pede opções que pelo Mayk é simples pq é a express, sem mta explicação
 nunjucks.configure("views", {
-    express: server
+    express: server,
+    autoescape: false
 })
 
 //CRIANDO ROTAS 
@@ -36,13 +37,23 @@ nunjucks.configure("views", {
 //AULA CRIANDO TEMPLATE ENGINE - Módulo template engine aula 2
 //agora o return dele vai ser outra coisa, res.render() que é para conectar com o nunjucks, que é a renderização dos arquivos do nunjucks que chamaos por um método, que é a renderização de uma view, não precisa de HTML pq isso passamos na linha acima do server.set
 server.get("/", function(req, res) {
-    return res.render("about")
+    const data_about = {
+        avatar_url: "https://avatars2.githubusercontent.com/u/42016457?s=460&u=56d29a592d0d5345015a1f78104033c11880484d&v=4",
+        name: "Caio Ledesma",
+        role: "Fullstack Developer",
+        description: 'Estudante na <a href="https://rocketseat.com.br/" target="blank">Rocketseat</a>',
+        links: [
+            {name: "Github", url: "https://github.com/caioledesma"},
+            {name: "LinkedIn", url: "https://www.linkedin.com/in/caioledesma/"}
+        ]
+    }
+    return res.render("about", {about: data_about})
 })
 
 //FAZER A ROTA PRA PORTFOLIO
 
 server.get("/portfolio", function(req, res) {
-    return res.render("portfolio")
+    return res.render("portfolio", {items: videos})
 })
 
 //RODAR O SERVER

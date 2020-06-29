@@ -99,13 +99,14 @@ header {
 
 .card{
     background-color: var(--color-rocket);
-    border-radius: 20px;
+    border-radius: 10px;
+    display: grid;
 
 }
 
 .card_image-container img{
     width: 100%; /*Quando colocamos % no elemento filho, ele respeita o tamanho em % do pai, sempre */
-    border-radius: 20px 20px 0  0;
+    border-radius: 10px 10px 0  0;
 
 }
 
@@ -114,14 +115,12 @@ header {
     padding: 20px;
 }
 
-.card_info{
-    background-color: rgb(15, 15, 63);
-    border-radius: 20px;
-}
 
 .card_info{
     display: grid; /*abaixo está a descriçã das colunas */
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .card_price{
@@ -149,7 +148,7 @@ header {
     background-color: white;
     width: 90%;
     height: 90%;
-    margin: 5vh auto;
+    margin: 6vh auto;
     position: relative; /* Quando eu coloco o position relative aqui, o filho abaixo, .modal .close-modal, ele respeita esse posicionamento quando colocamos position: absolute, então ele é absoluto dentro do máximo do elemento pai, quando tem o position: relative*/
 }
 
@@ -157,7 +156,7 @@ header {
     color: black;
     position: absolute;
     right: 8px;
-    top: 8px;
+    top: 2px;
     cursor: pointer;
      
 }
