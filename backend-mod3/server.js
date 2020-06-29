@@ -57,6 +57,20 @@ server.get("/portfolio", function(req, res) {
     return res.render("portfolio", {items: videos})
 })
 
+server.get("/video", function(req, res) {
+    const id = req.query.id
+
+    const video = videos.find(function(video){
+        if (video.id == id){
+            return true
+        }
+    })
+    if (!video){
+        return res.send("Video Not Found!")
+    }
+
+    return res.render("video", { item: video })
+})
 //RODAR O SERVER
 //chamamos a const server e coloca ele pra ouvir a função listen    
 // a função listen recebe dois parâmetros, a porta e outra função dentro
