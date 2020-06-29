@@ -34,6 +34,7 @@
                     </div>
                 {% endfor %}
 
+                {# Antes de adicionarmos os dados para o backend a gente colocava card por card como está abaixo #}
                 {# <div class="card" id="WLH9biwfZVM">
                     <div class="card_image-container">
                         <img src="https://img.youtube.com/vi/WLH9biwfZVM/maxresdefault.jpg" alt="Capa imagem">
@@ -113,7 +114,7 @@
                     </a>
 
                     <div class="modal-content">
-                        <iframe src="https://www.youtube.com/embed/MSXxmcdJClc" frameborder="0"></iframe>
+                        <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
                     </div>
 
                 </div>
