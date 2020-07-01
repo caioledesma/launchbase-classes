@@ -1,0 +1,127 @@
+
+{% extends "layout.njk" %}
+
+{% block head %}
+    
+    <title> Portfolio - Caio Ledesma </title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+
+
+                <div id="wrapper">
+                    <h1>Aulas</h1>
+                </div>
+
+            <section class="cards">
+                
+                {% for item in items %}
+                    <div class="card" id="{{item.id}}" >
+                        <div class="card_image-container {{ 'featured-wrapper' if item.featured }}">
+                            <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+                            {%if item.featured %}
+                                <div class="featured">Featured</div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="card_content">
+                            <p>{{item.title}}</p>
+                        </div>
+                        <div class="card_info">
+                            <p>{{item.duration}}</p>
+                            <p class="card_price">{{item.price}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                {# Antes de adicionarmos os dados para o backend a gente colocava card por card como está abaixo #}
+                {# <div class="card" id="WLH9biwfZVM">
+                    <div class="card_image-container">
+                        <img src="https://img.youtube.com/vi/WLH9biwfZVM/maxresdefault.jpg" alt="Capa imagem">
+                    </div>
+                    
+                    <div class="card_content">
+                        <p>Resumão Dark </p>
+                    </div>
+                    <div class="card_info">
+                        <p>12min</p>
+                        <p class="card_price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="MSXxmcdJClc">
+                    <div class="card_image-container">
+                        <img src="https://img.youtube.com/vi/MSXxmcdJClc/maxresdefault.jpg" alt="Capa imagem">
+                    </div>
+                    
+                    <div class="card_content">
+                        <p>Resumão Dark </p>
+                    </div>
+                    <div class="card_info">
+                        <p>12min</p>
+                        <p class="card_price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="ebkPGWW7wxc">
+                    <div class="card_image-container">
+                        <img src="https://img.youtube.com/vi/ebkPGWW7wxc/maxresdefault.jpg" alt="Capa imagem">
+                    </div>
+                    
+                    <div class="card_content">
+                        <p>Resumão Dark </p>
+                    </div>
+                    <div class="card_info">
+                        <p>12min</p>
+                        <p class="card_price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="WLH9biwfZVM">
+                    <div class="card_image-container">
+                        <img src="https://img.youtube.com/vi/WLH9biwfZVM/maxresdefault.jpg" alt="Capa imagem">
+                    </div>
+                    
+                    <div class="card_content">
+                        <p>Resumão Dark </p>
+                    </div>
+                    <div class="card_info">
+                        <p>12min</p>
+                        <p class="card_price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card"id="MSXxmcdJClc">
+                    <div class="card_image-container">
+                        <img src="https://img.youtube.com/vi/MSXxmcdJClc/maxresdefault.jpg" alt="Capa imagem">
+                    </div>
+                    
+                    <div class="card_content">
+                        <p>Resumão Dark </p>
+                    </div>
+                    <div class="card_info">
+                        <p>12min</p>
+                        <p class="card_price">Free</p>
+                    </div>
+                </div> #}
+
+            </section>
+               
+            {# <div class="modal-overlay">
+                <div class="modal">
+                    <a class="close-modal">
+                        <i class="material-icons">highlight_off</i>
+                    </a>
+
+                    <div class="modal-content">
+                        <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
+                    </div>
+
+                </div>
+            </div>#}
+            <script src="scripts.js"></script> 
+        
+{% endblock %}
