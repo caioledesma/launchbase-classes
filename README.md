@@ -39,7 +39,9 @@ LaunchBase is an online bootcamp made by RocketSeat School, the training consist
 
 <p>Beginning with Frontend</a> first steps with JavaScript, multiple screens and programs developed with JavaScript. </p>
 
-<p>Beginning with Backend:</a>  </p>
+<p>Beginning with Backend:</a> Building a server with Node JS and a portfolio page with nunjucks template engine. </p>
+
+<p>Gym Module:</a> Build an app to manage a Gym with instructors and members logic. </p>
 <br />
 
 ## :rocket: Technologies
