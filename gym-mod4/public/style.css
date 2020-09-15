@@ -50,7 +50,6 @@ header{
 
 /* esse abaixo é pra criar pseudo elementos, com o after ele aparece depois e o before, ele aparece antes. Sempre precisa ter um CONTENT e pode ser vazio */
 
-
 .links a::after{
     content: "";
     position: absolute;

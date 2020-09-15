@@ -32,5 +32,5 @@ nunjucks.configure("views", {
 //chamamos a const server e coloca ele pra ouvir a função listen    
 // a função listen recebe dois parâmetros, a porta e outra função dentro
 server.listen(5000, function() {   
-    console.log('Run! Its a marathon, not a srpint!')
+    console.log('Run! Its a marathon, not a sprint!')
 })
