@@ -66,5 +66,37 @@ header{
     /* transition pode ser aplicado em váárias coisas, melhro consultar o google, para especificar */
 }
 
+/* ===CARD==== */
 
+.card{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin: 45px auto;
+    /* Grid de divisão ao meio */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* sombra */
+    box-shadow: 4px 4px 20px 0px black;
+    /* animação, toda animação precisa de um nome que pode ser qualquer coisa */
+    animation-name: up;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
 
+    /* Outra forma de escrever: animation: up 500ms ease-in;  */
+    /* opacity: 0; */
+    /* animation-fill-mode: backwards ou forwards;  esse atributo faz com que o elemento termine no estado do FROM ou do TO do keyframes abaixo quando o OPACITY está no card, mas nao precisa porque é uma propriedade a mais no css, melhor deixar embaixo*/
+
+}
+
+@keyframes up {
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to{
+        opacity: 1;
+    }   
+
+}
